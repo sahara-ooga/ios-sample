@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ios_uikit_uiprogressview_demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Kwd-CS-RPO">
+                                <rect key="frame" x="30" y="333" width="315" height="2"/>
+                            </progressView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9PO-rk-AaA">
+                                <rect key="frame" x="30" y="607" width="315" height="30"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="TJ4-uj-2V8"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal">
+                                    <string key="title">Reset
+</string>
+                                </state>
+                                <connections>
+                                    <action selector="resetProgress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="02j-Le-9SV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sds-NL-Jz5">
+                                <rect key="frame" x="30" y="557" width="315" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Pjh-Av-sz3"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Increase"/>
+                                <connections>
+                                    <action selector="increaseProgress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O3I-I1-c2d"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="sds-NL-Jz5" secondAttribute="trailing" constant="30" id="5C5-Ue-RCG"/>
+                            <constraint firstAttribute="trailing" secondItem="Kwd-CS-RPO" secondAttribute="trailing" constant="30" id="6xs-8L-607"/>
+                            <constraint firstItem="sds-NL-Jz5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="MYm-02-tNL"/>
+                            <constraint firstAttribute="trailing" secondItem="9PO-rk-AaA" secondAttribute="trailing" constant="30" id="RqG-6S-6Nu"/>
+                            <constraint firstItem="9PO-rk-AaA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="TYW-IM-hX4"/>
+                            <constraint firstItem="Kwd-CS-RPO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="WgK-90-iCF"/>
+                            <constraint firstItem="Kwd-CS-RPO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="lXD-yn-xh0"/>
+                            <constraint firstItem="9PO-rk-AaA" firstAttribute="top" secondItem="sds-NL-Jz5" secondAttribute="bottom" constant="20" id="pnD-OY-Mh7"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="9PO-rk-AaA" secondAttribute="bottom" constant="30" id="rfa-LB-FMF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="progressView" destination="Kwd-CS-RPO" id="8qu-U4-wxe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ios_uikit_uiimageview_demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vPH-OB-0OQ">
+                                <rect key="frame" x="67" y="154" width="240" height="360"/>
+                                <subviews>
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stv" highlightedImage="kobaton" translatesAutoresizingMaskIntoConstraints="NO" id="Ead-mb-Pf7">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="132"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Ead-mb-Pf7" firstAttribute="leading" secondItem="vPH-OB-0OQ" secondAttribute="leading" id="BT2-q2-iyK"/>
+                                    <constraint firstAttribute="width" constant="240" id="O69-Zk-G77"/>
+                                    <constraint firstAttribute="height" constant="360" id="cfA-nV-VjM"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ead-mb-Pf7" secondAttribute="trailing" id="dvu-8G-eBV"/>
+                                    <constraint firstItem="Ead-mb-Pf7" firstAttribute="top" secondItem="vPH-OB-0OQ" secondAttribute="top" id="ut6-QZ-gRL"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vPH-OB-0OQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="IGh-6N-zNX"/>
+                            <constraint firstItem="vPH-OB-0OQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pdw-dT-QCZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="Ead-mb-Pf7" id="Nxd-Bz-vMu"/>
+                        <outlet property="subView" destination="vPH-OB-0OQ" id="8Zq-2x-pIl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="273" y="142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="kobaton" width="337" height="256"/>
+        <image name="stv" width="320" height="132"/>
+    </resources>
+</document>

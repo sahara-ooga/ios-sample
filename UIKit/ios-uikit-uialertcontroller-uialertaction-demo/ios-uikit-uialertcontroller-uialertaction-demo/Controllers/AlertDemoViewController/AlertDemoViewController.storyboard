@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="yyR-oa-fd1">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Alert Demo View Controller-->
+        <scene sceneID="p3r-wM-kkB">
+            <objects>
+                <viewController id="yyR-oa-fd1" customClass="AlertDemoViewController" customModule="ios_uikit_uialertcontroller_uialertaction_demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Z41-oW-T9O"/>
+                        <viewControllerLayoutGuide type="bottom" id="CA5-uD-Y4k"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="G1W-Sr-DWu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Cog-70-pA8">
+                                <rect key="frame" x="47" y="188.5" width="280" height="290.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[Alert]" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XTi-s6-vZJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="48.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="GMP-ai-Vf8">
+                                        <rect key="frame" x="0.0" y="25.5" width="280" height="130"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RVf-B5-uIs">
+                                                <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
+                                                <color key="backgroundColor" red="0.62465083020000001" green="0.9470211758" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="130" id="csb-hB-QAC"/>
+                                                    <constraint firstAttribute="width" constant="130" id="k0p-r0-Tp3"/>
+                                                </constraints>
+                                                <state key="normal" title="singleButton1">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="didTapSingleButtonAlert1:" destination="yyR-oa-fd1" eventType="touchUpInside" id="mzy-Ra-MRo"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nLQ-Q4-t23">
+                                                <rect key="frame" x="150" y="0.0" width="130" height="130"/>
+                                                <color key="backgroundColor" red="0.62465083020000001" green="0.9470211758" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="130" id="8xI-kT-PTR"/>
+                                                    <constraint firstAttribute="height" constant="130" id="KgQ-az-J1o"/>
+                                                </constraints>
+                                                <state key="normal" title="doubleButton1">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="didTapDoubleButtonAlert1:" destination="yyR-oa-fd1" eventType="touchUpInside" id="bds-EL-U15"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="dAz-Gu-VXy">
+                                        <rect key="frame" x="0.0" y="160.5" width="280" height="130"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sdG-nh-t3t">
+                                                <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
+                                                <color key="backgroundColor" red="0.62465083020000001" green="0.9470211758" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="130" id="P49-SN-ui9"/>
+                                                    <constraint firstAttribute="height" constant="130" id="YoN-07-tT3"/>
+                                                </constraints>
+                                                <state key="normal" title="singleButton2">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="didTapSingleButtonAlert2:" destination="yyR-oa-fd1" eventType="touchUpInside" id="rXE-7C-FeE"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vnb-db-gfS">
+                                                <rect key="frame" x="150" y="0.0" width="130" height="130"/>
+                                                <color key="backgroundColor" red="0.62465083020000001" green="0.9470211758" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="130" id="Vb0-jZ-ol4"/>
+                                                    <constraint firstAttribute="height" constant="130" id="tec-zh-4OR"/>
+                                                </constraints>
+                                                <state key="normal" title="doubleButton2">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="didTapDoubleButtonAlert2:" destination="yyR-oa-fd1" eventType="touchUpInside" id="CiF-2B-cFP"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Cog-70-pA8" firstAttribute="centerX" secondItem="G1W-Sr-DWu" secondAttribute="centerX" id="Tdj-aF-ZPU"/>
+                            <constraint firstItem="Cog-70-pA8" firstAttribute="centerY" secondItem="G1W-Sr-DWu" secondAttribute="centerY" id="eA8-dU-R1Z"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="klE-d6-mfc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-58" y="61"/>
+        </scene>
+    </scenes>
+</document>
