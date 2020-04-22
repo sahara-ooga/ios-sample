@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <playground version='6.0' target-platform='ios' display-mode='raw'>
     <pages>
+        <page name='応用'/>
+        <page name='test'/>
         <page name='主要プロパティ・メソッド'/>
         <page name='実用例：VCのメソッド'/>
-        <page name='応用'/>
     </pages>
 </playground>
