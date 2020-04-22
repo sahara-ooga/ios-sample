@@ -5,8 +5,8 @@ import UIKit
 let string = "今日は、祭りが終わるのを待っていたかのように雨が降り出した。"
 //MARK:主要プロパティ
 string.isEmpty //false
-string.characters.count
-string.characters.last  //"。"
+string.count
+string.last  //"。"
 
 //MARK:主要メソッド
 //文字列の一部を取得する
