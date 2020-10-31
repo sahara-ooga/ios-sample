@@ -2,7 +2,7 @@
 
 ## 概要
 UIViewは、画面にViewを表示する際に利用します。 
-また、 多くのUIパーツの親クラスになっています。  
+また、 多くのUIパーツの親クラスになっています。
 
 ## 関連クラス
 UIResponder
@@ -30,17 +30,20 @@ UIResponder
 
 |メソッド名|説明|サンプル|
 |---|---|---|
-|addSubview(_ view: UIView) |subViewを追加する  |`view.addSubView(demoView)`  |
-|removeFromSuperview() |親ViewからsubViewを取り除く  |`viewWhichWillBeRemoved.removeFromSuperview()`  |
+| addSubview(_ view: UIView) | subViewを追加する  |`view.addSubView(demoView)`  |
+| removeFromSuperview() | 親ViewからsubViewを取り除く  |`viewWhichWillBeRemoved.removeFromSuperview()`  |
 
 ## フレームワーク
+
 UIKit.framework
 
 ## サポートOSバージョン
+
 iOS2.0以上
 
 ## 開発環境
-|category | Version| 
+
+| category | Version |
 |---|---|
 | Swift | 3.0.2 |
 | XCode | 8.2.1 |
