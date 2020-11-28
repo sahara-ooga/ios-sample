@@ -35,3 +35,5 @@ The testing process will stop due to this method, like this:
 ## Reference
 
 [breakpoint(receiveSubscription:receiveOutput:receiveCompletion:) | Apple Developer Documentation](https://developer.apple.com/documentation/combine/publisher/breakpoint(receivesubscription:receiveoutput:receivecompletion:))
+
+see also [print(_:to:)](https://developer.apple.com/documentation/combine/publisher/print(_:to:))
