@@ -5,7 +5,11 @@ Set the condition for stopping the process.
 ## Declaration
 
 ```swift
-func breakpoint(receiveSubscription: ((Subscription) -> Bool)? = nil, receiveOutput: ((Self.Output) -> Bool)? = nil, receiveCompletion: ((Subscribers.Completion<Self.Failure>) -> Bool)? = nil) -> Publishers.Breakpoint<Self>
+func breakpoint(
+    receiveSubscription: ((Subscription) -> Bool)? = nil,
+    receiveOutput: ((Self.Output) -> Bool)? = nil,
+    receiveCompletion: ((Subscribers.Completion<Self.Failure>) -> Bool)? = nil
+    ) -> Publishers.Breakpoint<Self>
 ```
 
 ## Framework
